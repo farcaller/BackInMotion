@@ -21,12 +21,13 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		94558B56C48A4431B8BBC7A7 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CB9527538F143C5BB77DCFD /* libPods-test.a */; };
 		A5E1C32A15DBB8B10037EC48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E1C32915DBB8B10037EC48 /* Foundation.framework */; };
 		A5E1C33915DBB8B10037EC48 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E1C33815DBB8B10037EC48 /* SenTestingKit.framework */; };
 		A5E1C33C15DBB8B10037EC48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E1C32915DBB8B10037EC48 /* Foundation.framework */; };
 		A5E1C33F15DBB8B10037EC48 /* libBackInMotion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E1C32615DBB8B10037EC48 /* libBackInMotion.a */; };
 		A5E1C34515DBB8B10037EC48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5E1C34315DBB8B10037EC48 /* InfoPlist.strings */; };
-		A5E1C34815DBB8B10037EC48 /* BackInMotionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E1C34715DBB8B10037EC48 /* BackInMotionTests.m */; };
+		A5E1C34815DBB8B10037EC48 /* BackInMotionSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E1C34715DBB8B10037EC48 /* BackInMotionSpec.m */; };
 		A5E1C35415DBB9090037EC48 /* BackInMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E1C35315DBB9090037EC48 /* BackInMotion.m */; };
 		A5E1C35715DBB9330037EC48 /* rubymotion.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E1C35615DBB9330037EC48 /* rubymotion.m */; };
 		A5E1C36115DBC1500037EC48 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E1C35F15DBC1340037EC48 /* libstdc++.dylib */; };
@@ -59,24 +60,25 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1CB9527538F143C5BB77DCFD /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E1C32615DBB8B10037EC48 /* libBackInMotion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBackInMotion.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5E1C32915DBB8B10037EC48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A5E1C32915DBB8B10037EC48 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A5E1C32D15DBB8B10037EC48 /* BackInMotion-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BackInMotion-Prefix.pch"; sourceTree = "<group>"; };
 		A5E1C33715DBB8B10037EC48 /* BackInMotionTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackInMotionTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5E1C33815DBB8B10037EC48 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A5E1C33815DBB8B10037EC48 /* SenTestingKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		A5E1C34215DBB8B10037EC48 /* BackInMotionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BackInMotionTests-Info.plist"; sourceTree = "<group>"; };
 		A5E1C34415DBB8B10037EC48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A5E1C34615DBB8B10037EC48 /* BackInMotionTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackInMotionTests.h; sourceTree = "<group>"; };
-		A5E1C34715DBB8B10037EC48 /* BackInMotionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackInMotionTests.m; sourceTree = "<group>"; };
+		A5E1C34715DBB8B10037EC48 /* BackInMotionSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackInMotionSpec.m; sourceTree = "<group>"; };
 		A5E1C35215DBB9090037EC48 /* BackInMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackInMotion.h; sourceTree = "<group>"; };
 		A5E1C35315DBB9090037EC48 /* BackInMotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackInMotion.m; sourceTree = "<group>"; };
 		A5E1C35515DBB91B0037EC48 /* rubymotion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rubymotion.h; sourceTree = "<group>"; };
 		A5E1C35615DBB9330037EC48 /* rubymotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rubymotion.m; sourceTree = "<group>"; };
-		A5E1C35915DBC1290037EC48 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
-		A5E1C35A15DBC1290037EC48 /* libc++abi.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++abi.dylib"; path = "usr/lib/libc++abi.dylib"; sourceTree = SDKROOT; };
-		A5E1C35D15DBC12E0037EC48 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
-		A5E1C35F15DBC1340037EC48 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
-		A5E1C36515DBC4860037EC48 /* rubylib-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "rubylib-universal.a"; path = "BackInMotionTests/rubylib/build/rubylib-universal.a"; sourceTree = "<group>"; };
+		A5E1C35915DBC1290037EC48 /* libc++.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		A5E1C35A15DBC1290037EC48 /* libc++abi.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++abi.dylib"; path = "usr/lib/libc++abi.dylib"; sourceTree = SDKROOT; };
+		A5E1C35D15DBC12E0037EC48 /* libicucore.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		A5E1C35F15DBC1340037EC48 /* libstdc++.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		A5E1C36515DBC4860037EC48 /* rubylib-universal.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "rubylib-universal.a"; path = "BackInMotionTests/rubylib/build/rubylib-universal.a"; sourceTree = "<group>"; };
+		DC33AF275C9845DB9BA2EA91 /* Pods-test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.xcconfig"; path = "Pods/Pods-test.xcconfig"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				A5E1C36315DBC1540037EC48 /* libc++.dylib in Frameworks */,
 				A5E1C36415DBC1550037EC48 /* libc++abi.dylib in Frameworks */,
 				A5E1C36615DBC4860037EC48 /* rubylib-universal.a in Frameworks */,
+				94558B56C48A4431B8BBC7A7 /* libPods-test.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +116,7 @@
 				A5E1C34015DBB8B10037EC48 /* BackInMotionTests */,
 				A5E1C32815DBB8B10037EC48 /* Frameworks */,
 				A5E1C32715DBB8B10037EC48 /* Products */,
+				DC33AF275C9845DB9BA2EA91 /* Pods-test.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +139,7 @@
 				A5E1C35A15DBC1290037EC48 /* libc++abi.dylib */,
 				A5E1C32915DBB8B10037EC48 /* Foundation.framework */,
 				A5E1C33815DBB8B10037EC48 /* SenTestingKit.framework */,
+				1CB9527538F143C5BB77DCFD /* libPods-test.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,8 +164,7 @@
 		A5E1C34015DBB8B10037EC48 /* BackInMotionTests */ = {
 			isa = PBXGroup;
 			children = (
-				A5E1C34615DBB8B10037EC48 /* BackInMotionTests.h */,
-				A5E1C34715DBB8B10037EC48 /* BackInMotionTests.m */,
+				A5E1C34715DBB8B10037EC48 /* BackInMotionSpec.m */,
 				A5E1C34115DBB8B10037EC48 /* Supporting Files */,
 			);
 			path = BackInMotionTests;
@@ -214,6 +218,7 @@
 				A5E1C33315DBB8B10037EC48 /* Frameworks */,
 				A5E1C33415DBB8B10037EC48 /* Resources */,
 				A5E1C33515DBB8B10037EC48 /* ShellScript */,
+				466B926E17774AE5901EF04B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,6 +270,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		466B926E17774AE5901EF04B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-test-resources.sh\"\n";
+		};
 		A5E1C33515DBB8B10037EC48 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -308,7 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5E1C34815DBB8B10037EC48 /* BackInMotionTests.m in Sources */,
+				A5E1C34815DBB8B10037EC48 /* BackInMotionSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +421,7 @@
 		};
 		A5E1C34F15DBB8B10037EC48 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC33AF275C9845DB9BA2EA91 /* Pods-test.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -421,6 +441,7 @@
 		};
 		A5E1C35015DBB8B10037EC48 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC33AF275C9845DB9BA2EA91 /* Pods-test.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -471,6 +492,7 @@
 				A5E1C34D15DBB8B10037EC48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5E1C34E15DBB8B10037EC48 /* Build configuration list for PBXNativeTarget "BackInMotionTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +501,7 @@
 				A5E1C35015DBB8B10037EC48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5E1C36815DBC4C60037EC48 /* Build configuration list for PBXAggregateTarget "rubylib" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +510,7 @@
 				A5E1C36A15DBC4C60037EC48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -65,15 +65,24 @@ static id RubyDispatch(id top, id target, SEL sel, NSArray *args)
 	return o;
 }
 
-- (NSString *)description
+- (id)__rubyObject
 {
-	return [NSString stringWithFormat:@"#<%@>", _rbObj];
+	return _rbObj;
 }
 
-- (id)descriptionWithLocale:(id)locale
+- (NSString *)description
 {
-	
+	return RubyDispatch((id)rb_cObject, _rbObj, @selector(inspect), nil);
+}
+
+- (NSString *)descriptionWithLocale:(id)locale
+{
 	return [self description];
+}
+
+- (Class)class
+{
+	return RubyDispatch((id)rb_cObject, _rbObj, @selector(class), nil);
 }
 
 - (void)forwardInvocation:(NSInvocation *)anInvocation
@@ -86,6 +95,7 @@ static id RubyDispatch(id top, id target, SEL sel, NSArray *args)
 	}
 	
 	id ret = RubyDispatch((id)rb_cObject, _rbObj, [anInvocation selector], args);
+	// XXX: NSLog(@"dispatch %@#%@", RubyDispatch((id)rb_cObject, _rbObj, @selector(class), @[]), NSStringFromSelector([anInvocation selector]));
 	
 	id retProxy = [RubyObjectProxy objectWithRubyObject:ret];
 	[anInvocation setReturnValue:&retProxy];
@@ -93,6 +103,10 @@ static id RubyDispatch(id top, id target, SEL sel, NSArray *args)
 
 - (BOOL)respondsToSelector:(SEL)aSelector
 {
+	if([NSStringFromSelector(aSelector) isEqualToString:@"__rubyObject"]) {
+		return YES;
+	}
+	
 	BOOL responds = [RubyDispatch((id)rb_cObject, _rbObj, NSSelectorFromString(@"respond_to?:"), @[ NSStringFromSelector(aSelector) ]) boolValue];
 	if(!responds) {
 		NSLog(@"object %@ does not respont to %@", _rbObj, NSStringFromSelector(aSelector));

@@ -30,10 +30,6 @@
 		A5E1C34815DBB8B10037EC48 /* BackInMotionSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E1C34715DBB8B10037EC48 /* BackInMotionSpec.m */; };
 		A5E1C35415DBB9090037EC48 /* BackInMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E1C35315DBB9090037EC48 /* BackInMotion.m */; };
 		A5E1C35715DBB9330037EC48 /* rubymotion.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E1C35615DBB9330037EC48 /* rubymotion.m */; };
-		A5E1C36115DBC1500037EC48 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E1C35F15DBC1340037EC48 /* libstdc++.dylib */; };
-		A5E1C36215DBC1520037EC48 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E1C35D15DBC12E0037EC48 /* libicucore.dylib */; };
-		A5E1C36315DBC1540037EC48 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E1C35915DBC1290037EC48 /* libc++.dylib */; };
-		A5E1C36415DBC1550037EC48 /* libc++abi.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E1C35A15DBC1290037EC48 /* libc++abi.dylib */; };
 		A5E1C36615DBC4860037EC48 /* rubylib-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E1C36515DBC4860037EC48 /* rubylib-universal.a */; };
 /* End PBXBuildFile section */
 
@@ -73,10 +69,6 @@
 		A5E1C35315DBB9090037EC48 /* BackInMotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackInMotion.m; sourceTree = "<group>"; };
 		A5E1C35515DBB91B0037EC48 /* rubymotion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rubymotion.h; sourceTree = "<group>"; };
 		A5E1C35615DBB9330037EC48 /* rubymotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rubymotion.m; sourceTree = "<group>"; };
-		A5E1C35915DBC1290037EC48 /* libc++.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
-		A5E1C35A15DBC1290037EC48 /* libc++abi.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++abi.dylib"; path = "usr/lib/libc++abi.dylib"; sourceTree = SDKROOT; };
-		A5E1C35D15DBC12E0037EC48 /* libicucore.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
-		A5E1C35F15DBC1340037EC48 /* libstdc++.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		A5E1C36515DBC4860037EC48 /* rubylib-universal.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "rubylib-universal.a"; path = "BackInMotionTests/rubylib/build/rubylib-universal.a"; sourceTree = "<group>"; };
 		DC33AF275C9845DB9BA2EA91 /* Pods-test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.xcconfig"; path = "Pods/Pods-test.xcconfig"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -97,10 +89,6 @@
 				A5E1C33915DBB8B10037EC48 /* SenTestingKit.framework in Frameworks */,
 				A5E1C33C15DBB8B10037EC48 /* Foundation.framework in Frameworks */,
 				A5E1C33F15DBB8B10037EC48 /* libBackInMotion.a in Frameworks */,
-				A5E1C36115DBC1500037EC48 /* libstdc++.dylib in Frameworks */,
-				A5E1C36215DBC1520037EC48 /* libicucore.dylib in Frameworks */,
-				A5E1C36315DBC1540037EC48 /* libc++.dylib in Frameworks */,
-				A5E1C36415DBC1550037EC48 /* libc++abi.dylib in Frameworks */,
 				A5E1C36615DBC4860037EC48 /* rubylib-universal.a in Frameworks */,
 				94558B56C48A4431B8BBC7A7 /* libPods-test.a in Frameworks */,
 			);
@@ -133,10 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				A5E1C36515DBC4860037EC48 /* rubylib-universal.a */,
-				A5E1C35F15DBC1340037EC48 /* libstdc++.dylib */,
-				A5E1C35D15DBC12E0037EC48 /* libicucore.dylib */,
-				A5E1C35915DBC1290037EC48 /* libc++.dylib */,
-				A5E1C35A15DBC1290037EC48 /* libc++abi.dylib */,
 				A5E1C32915DBB8B10037EC48 /* Foundation.framework */,
 				A5E1C33815DBB8B10037EC48 /* SenTestingKit.framework */,
 				1CB9527538F143C5BB77DCFD /* libPods-test.a */,
@@ -434,6 +418,15 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/BackInMotionTests/rubylib/build\"",
 				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					SenTestingKit,
+					"-lstdc++",
+					"-licucore",
+					"-lc++",
+					"-lc++abi",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -453,6 +446,15 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/BackInMotionTests/rubylib/build\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					SenTestingKit,
+					"-lstdc++",
+					"-licucore",
+					"-lc++",
+					"-lc++abi",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;

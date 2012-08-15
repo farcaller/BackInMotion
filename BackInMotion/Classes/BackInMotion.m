@@ -18,6 +18,12 @@
 
 @implementation BackInMotion
 
++ (void)initialize
+{
+	void RubyMotionInit(int, char **);
+	RubyMotionInit(0, NULL);
+}
+
 + (id)const_get:(NSString *)topLevelConst
 {
 	id rbobj = (id)rb_const_get(rb_cObject, rb_intern([topLevelConst UTF8String]));

@@ -19,13 +19,10 @@
 -name;
 @end
 
-void RubyMotionInit(int, char **);
 
 SPEC_BEGIN(BackInMotionSpec)
 
 describe(@"RubyMotion", ^{
-	RubyMotionInit(0, NULL);
-	
 	describe(@"BackInMotion", ^{
 		it(@"fetches a constant from Object namespace", ^{
 			Class Hello = [BackInMotion const_get:@"Hello"];

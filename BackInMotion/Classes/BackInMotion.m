@@ -9,13 +9,6 @@
 #import "BackInMotion.h"
 #import "rubymotion.h"
 
-@interface RubyObjectProxy : NSProxy
-
-+ (id)objectWithRubyObject:(id)rbObj;
-
-@end
-
-
 @implementation BackInMotion
 
 + (void)initialize

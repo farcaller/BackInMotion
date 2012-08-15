@@ -36,7 +36,7 @@
 @end
 
 #pragma mark - Runtime Warapper
-static id RubyDispatch(id top, id target, SEL sel, NSArray *args)
+id RubyDispatch(id top, id target, SEL sel, NSArray *args)
 {
 	const VALUE *argv = NULL;
 	int argc = [args count];

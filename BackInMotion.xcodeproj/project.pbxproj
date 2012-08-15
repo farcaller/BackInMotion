@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		A5E1C36715DBC4C60037EC48 /* rubylib */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A5E1C36815DBC4C60037EC48 /* Build configuration list for PBXAggregateTarget "rubylib" */;
+			buildPhases = (
+				A5E1C36B15DBC4CB0037EC48 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = rubylib;
+			productName = rubylib;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		A5E1C32A15DBB8B10037EC48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E1C32915DBB8B10037EC48 /* Foundation.framework */; };
+		A5E1C33915DBB8B10037EC48 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E1C33815DBB8B10037EC48 /* SenTestingKit.framework */; };
+		A5E1C33C15DBB8B10037EC48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E1C32915DBB8B10037EC48 /* Foundation.framework */; };
+		A5E1C33F15DBB8B10037EC48 /* libBackInMotion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E1C32615DBB8B10037EC48 /* libBackInMotion.a */; };
+		A5E1C34515DBB8B10037EC48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5E1C34315DBB8B10037EC48 /* InfoPlist.strings */; };
+		A5E1C34815DBB8B10037EC48 /* BackInMotionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E1C34715DBB8B10037EC48 /* BackInMotionTests.m */; };
+		A5E1C35415DBB9090037EC48 /* BackInMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E1C35315DBB9090037EC48 /* BackInMotion.m */; };
+		A5E1C35715DBB9330037EC48 /* rubymotion.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E1C35615DBB9330037EC48 /* rubymotion.m */; };
+		A5E1C36115DBC1500037EC48 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E1C35F15DBC1340037EC48 /* libstdc++.dylib */; };
+		A5E1C36215DBC1520037EC48 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E1C35D15DBC12E0037EC48 /* libicucore.dylib */; };
+		A5E1C36315DBC1540037EC48 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E1C35915DBC1290037EC48 /* libc++.dylib */; };
+		A5E1C36415DBC1550037EC48 /* libc++abi.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E1C35A15DBC1290037EC48 /* libc++abi.dylib */; };
+		A5E1C36615DBC4860037EC48 /* rubylib-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E1C36515DBC4860037EC48 /* rubylib-universal.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5E1C33D15DBB8B10037EC48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5E1C31D15DBB8B10037EC48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5E1C32515DBB8B10037EC48;
+			remoteInfo = BackInMotion;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A5E1C32415DBB8B10037EC48 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A5E1C32615DBB8B10037EC48 /* libBackInMotion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBackInMotion.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E1C32915DBB8B10037EC48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A5E1C32D15DBB8B10037EC48 /* BackInMotion-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BackInMotion-Prefix.pch"; sourceTree = "<group>"; };
+		A5E1C33715DBB8B10037EC48 /* BackInMotionTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackInMotionTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E1C33815DBB8B10037EC48 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A5E1C34215DBB8B10037EC48 /* BackInMotionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BackInMotionTests-Info.plist"; sourceTree = "<group>"; };
+		A5E1C34415DBB8B10037EC48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A5E1C34615DBB8B10037EC48 /* BackInMotionTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackInMotionTests.h; sourceTree = "<group>"; };
+		A5E1C34715DBB8B10037EC48 /* BackInMotionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackInMotionTests.m; sourceTree = "<group>"; };
+		A5E1C35215DBB9090037EC48 /* BackInMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackInMotion.h; sourceTree = "<group>"; };
+		A5E1C35315DBB9090037EC48 /* BackInMotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackInMotion.m; sourceTree = "<group>"; };
+		A5E1C35515DBB91B0037EC48 /* rubymotion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rubymotion.h; sourceTree = "<group>"; };
+		A5E1C35615DBB9330037EC48 /* rubymotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rubymotion.m; sourceTree = "<group>"; };
+		A5E1C35915DBC1290037EC48 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		A5E1C35A15DBC1290037EC48 /* libc++abi.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++abi.dylib"; path = "usr/lib/libc++abi.dylib"; sourceTree = SDKROOT; };
+		A5E1C35D15DBC12E0037EC48 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		A5E1C35F15DBC1340037EC48 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		A5E1C36515DBC4860037EC48 /* rubylib-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "rubylib-universal.a"; path = "BackInMotionTests/rubylib/build/rubylib-universal.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5E1C32315DBB8B10037EC48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E1C32A15DBB8B10037EC48 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E1C33315DBB8B10037EC48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E1C33915DBB8B10037EC48 /* SenTestingKit.framework in Frameworks */,
+				A5E1C33C15DBB8B10037EC48 /* Foundation.framework in Frameworks */,
+				A5E1C33F15DBB8B10037EC48 /* libBackInMotion.a in Frameworks */,
+				A5E1C36115DBC1500037EC48 /* libstdc++.dylib in Frameworks */,
+				A5E1C36215DBC1520037EC48 /* libicucore.dylib in Frameworks */,
+				A5E1C36315DBC1540037EC48 /* libc++.dylib in Frameworks */,
+				A5E1C36415DBC1550037EC48 /* libc++abi.dylib in Frameworks */,
+				A5E1C36615DBC4860037EC48 /* rubylib-universal.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5E1C31B15DBB8B10037EC48 = {
+			isa = PBXGroup;
+			children = (
+				A5E1C32B15DBB8B10037EC48 /* BackInMotion */,
+				A5E1C34015DBB8B10037EC48 /* BackInMotionTests */,
+				A5E1C32815DBB8B10037EC48 /* Frameworks */,
+				A5E1C32715DBB8B10037EC48 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5E1C32715DBB8B10037EC48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5E1C32615DBB8B10037EC48 /* libBackInMotion.a */,
+				A5E1C33715DBB8B10037EC48 /* BackInMotionTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5E1C32815DBB8B10037EC48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5E1C36515DBC4860037EC48 /* rubylib-universal.a */,
+				A5E1C35F15DBC1340037EC48 /* libstdc++.dylib */,
+				A5E1C35D15DBC12E0037EC48 /* libicucore.dylib */,
+				A5E1C35915DBC1290037EC48 /* libc++.dylib */,
+				A5E1C35A15DBC1290037EC48 /* libc++abi.dylib */,
+				A5E1C32915DBB8B10037EC48 /* Foundation.framework */,
+				A5E1C33815DBB8B10037EC48 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5E1C32B15DBB8B10037EC48 /* BackInMotion */ = {
+			isa = PBXGroup;
+			children = (
+				A5E1C35115DBB9090037EC48 /* Classes */,
+				A5E1C32C15DBB8B10037EC48 /* Supporting Files */,
+			);
+			path = BackInMotion;
+			sourceTree = "<group>";
+		};
+		A5E1C32C15DBB8B10037EC48 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5E1C32D15DBB8B10037EC48 /* BackInMotion-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5E1C34015DBB8B10037EC48 /* BackInMotionTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5E1C34615DBB8B10037EC48 /* BackInMotionTests.h */,
+				A5E1C34715DBB8B10037EC48 /* BackInMotionTests.m */,
+				A5E1C34115DBB8B10037EC48 /* Supporting Files */,
+			);
+			path = BackInMotionTests;
+			sourceTree = "<group>";
+		};
+		A5E1C34115DBB8B10037EC48 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5E1C34215DBB8B10037EC48 /* BackInMotionTests-Info.plist */,
+				A5E1C34315DBB8B10037EC48 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5E1C35115DBB9090037EC48 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A5E1C35215DBB9090037EC48 /* BackInMotion.h */,
+				A5E1C35315DBB9090037EC48 /* BackInMotion.m */,
+				A5E1C35515DBB91B0037EC48 /* rubymotion.h */,
+				A5E1C35615DBB9330037EC48 /* rubymotion.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5E1C32515DBB8B10037EC48 /* BackInMotion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5E1C34B15DBB8B10037EC48 /* Build configuration list for PBXNativeTarget "BackInMotion" */;
+			buildPhases = (
+				A5E1C32215DBB8B10037EC48 /* Sources */,
+				A5E1C32315DBB8B10037EC48 /* Frameworks */,
+				A5E1C32415DBB8B10037EC48 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BackInMotion;
+			productName = BackInMotion;
+			productReference = A5E1C32615DBB8B10037EC48 /* libBackInMotion.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A5E1C33615DBB8B10037EC48 /* BackInMotionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5E1C34E15DBB8B10037EC48 /* Build configuration list for PBXNativeTarget "BackInMotionTests" */;
+			buildPhases = (
+				A5E1C33215DBB8B10037EC48 /* Sources */,
+				A5E1C33315DBB8B10037EC48 /* Frameworks */,
+				A5E1C33415DBB8B10037EC48 /* Resources */,
+				A5E1C33515DBB8B10037EC48 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5E1C33E15DBB8B10037EC48 /* PBXTargetDependency */,
+			);
+			name = BackInMotionTests;
+			productName = BackInMotionTests;
+			productReference = A5E1C33715DBB8B10037EC48 /* BackInMotionTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5E1C31D15DBB8B10037EC48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Hack&Dev";
+			};
+			buildConfigurationList = A5E1C32015DBB8B10037EC48 /* Build configuration list for PBXProject "BackInMotion" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A5E1C31B15DBB8B10037EC48;
+			productRefGroup = A5E1C32715DBB8B10037EC48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5E1C32515DBB8B10037EC48 /* BackInMotion */,
+				A5E1C33615DBB8B10037EC48 /* BackInMotionTests */,
+				A5E1C36715DBC4C60037EC48 /* rubylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5E1C33415DBB8B10037EC48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E1C34515DBB8B10037EC48 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5E1C33515DBB8B10037EC48 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		A5E1C36B15DBC4CB0037EC48 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/bin/bash --login";
+			shellScript = "cd ${SRCROOT}/BackInMotionTests/rubylib\nrake static";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5E1C32215DBB8B10037EC48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E1C35415DBB9090037EC48 /* BackInMotion.m in Sources */,
+				A5E1C35715DBB9330037EC48 /* rubymotion.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E1C33215DBB8B10037EC48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E1C34815DBB8B10037EC48 /* BackInMotionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5E1C33E15DBB8B10037EC48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5E1C32515DBB8B10037EC48 /* BackInMotion */;
+			targetProxy = A5E1C33D15DBB8B10037EC48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5E1C34315DBB8B10037EC48 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5E1C34415DBB8B10037EC48 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5E1C34915DBB8B10037EC48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A5E1C34A15DBB8B10037EC48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5E1C34C15DBB8B10037EC48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BackInMotion.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BackInMotion/BackInMotion-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A5E1C34D15DBB8B10037EC48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BackInMotion.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BackInMotion/BackInMotion-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A5E1C34F15DBB8B10037EC48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BackInMotion/BackInMotion-Prefix.pch";
+				INFOPLIST_FILE = "BackInMotionTests/BackInMotionTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/BackInMotionTests/rubylib/build\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A5E1C35015DBB8B10037EC48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BackInMotion/BackInMotion-Prefix.pch";
+				INFOPLIST_FILE = "BackInMotionTests/BackInMotionTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/BackInMotionTests/rubylib/build\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		A5E1C36915DBC4C60037EC48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A5E1C36A15DBC4C60037EC48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5E1C32015DBB8B10037EC48 /* Build configuration list for PBXProject "BackInMotion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E1C34915DBB8B10037EC48 /* Debug */,
+				A5E1C34A15DBB8B10037EC48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5E1C34B15DBB8B10037EC48 /* Build configuration list for PBXNativeTarget "BackInMotion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E1C34C15DBB8B10037EC48 /* Debug */,
+				A5E1C34D15DBB8B10037EC48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A5E1C34E15DBB8B10037EC48 /* Build configuration list for PBXNativeTarget "BackInMotionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E1C34F15DBB8B10037EC48 /* Debug */,
+				A5E1C35015DBB8B10037EC48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A5E1C36815DBC4C60037EC48 /* Build configuration list for PBXAggregateTarget "rubylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E1C36915DBC4C60037EC48 /* Debug */,
+				A5E1C36A15DBC4C60037EC48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5E1C31D15DBB8B10037EC48 /* Project object */;
+}
